@@ -42,7 +42,7 @@ class GithubAPI {
             repos = repos.filter(repo => !repo.fork)
         }
 
-        // console.log(repos[0].owner)
+        console.log(repos[0].owner)
 
         const stats = {
             repoCount: !forked ? repos.length : data.total_count,
@@ -52,7 +52,8 @@ class GithubAPI {
             languages: this.getSortedLanguages(repos),
             userLink: repos[0].owner.html_url,
             avatar: repos[0].owner.avatar_url,
-            repoLink: repos[0].owner.repos_url
+            repoLink: repos[0].owner.repos_url,
+            owner: repos[0].owner.login
         }
 
         console.log(stats)
