@@ -36,5 +36,5 @@ Javascript, Node.js
 
 
 <p align="center">
-  <img src="" alt="animated" />
+  <img src="https://github.com/hassankaz1/Github-UserStats/blob/master/demo/backend-demo.gif" alt="animated" />
 </p>
