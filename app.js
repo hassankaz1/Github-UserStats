@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require("cors");
 const { BadRequestError, NotFoundError } = require("./expressError");
 
-
+require("dotenv").config();
 
 const app = express();
 

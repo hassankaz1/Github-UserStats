@@ -15,10 +15,12 @@ class GithubAPI {
         console.log(endpoint)
         console.log(params)
 
+
+
         console.log("Getting Github Data")
         const { data } = await axios.get(BASE_URL + endpoint, {
             headers: {
-                Authorization: `Bearer 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`,
+                Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
             },
 
             params
